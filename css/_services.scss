@@ -1,0 +1,68 @@
+// mobile
+main 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .services 
+        {
+            width: 100%;
+            .services-container
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+// tab
+@media(min-width:768px)
+{
+    main 
+    {
+        section 
+        {
+            .services 
+            {
+                .services-container
+                {
+                    
+                }
+            }
+        }
+    }
+}
+// laptop
+@media(min-width:1024px)
+{
+    main
+    {
+        section 
+        {
+            .services 
+            {
+                .services-container
+                {
+                    
+                }
+            }
+        }
+    }
+}
+// system/pc
+@media(min-width:1284px)
+{
+    main
+    {
+        section 
+        {
+            .services 
+            {
+                .services-container
+                {
+                    
+                }
+            }
+        }
+    }
+}

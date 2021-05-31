@@ -1,0 +1,68 @@
+// mobile
+footer 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .footer 
+        {
+            width: 100%;
+            .footer-container
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+// tab
+@media(min-width:768px)
+{
+    footer 
+    {
+        section 
+        {
+            .footer 
+            {
+                .footer-container
+                {
+                    
+                }
+            }
+        }
+    }
+}
+// laptop
+@media(min-width:1024px)
+{
+    footer
+    {
+        section 
+        {
+            .footer 
+            {
+                .footer-container
+                {
+                    
+                }
+            }
+        }
+    }
+}
+// system/pc
+@media(min-width:1284px)
+{
+    footer
+    {
+        section 
+        {
+            .footer 
+            {
+                .footer-container
+                {
+                    
+                }
+            }
+        }
+    }
+}
