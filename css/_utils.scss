@@ -28,9 +28,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: inherit;
+    color: inherit;
 }
 body 
 {
     font-family: home,sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    --light-gray : #EDF2F7;
+    --light-green : #38A169;
+    --metal-blue : #38B2AC;
+    --dark-brown : #394456;
+    --light-brown : #394456d5;
+    --white : #fff;
+    line-height: 1.5;
 }
+button {
+    font-size: 100%;
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:  all .3s;
+}
+a {
+    text-decoration: none;
+    transition:  all .3s;
+}
+ul {
+    list-style-type: none;
+}
+

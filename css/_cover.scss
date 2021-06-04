@@ -5,12 +5,55 @@ main
     section 
     {
         width: 100%;
+        .cover-shape{
+            color: var(--light-gray);
+            fill: currentColor;
+            margin-bottom: -10px;
+        }
         .cover 
         {
             width: 100%;
+            margin-top: -5rem;
+            background-blend-mode: color-burn;
+            background-color: rgba(0, 0, 0, 0.34);
+            background-image: url("../img/hero.jpg");
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            //clip-path: circle(100% at 50% 0);
             .cover-container
             {
                 width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .content-wrapper{
+                    padding: 200px 30px;
+                    padding-bottom: 100px;
+                    width: 100%;
+                    text-align: center;
+                    color: var(--white);
+                    h1{
+                        padding: 0 0 20px 0;
+                        font-size: 200%;
+                        line-height: 1;
+                    }
+                    p {
+                        padding: 0 0 20px 0;
+                        opacity: 0.65;
+                    }
+                    .button-group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        .active {
+                            border-radius: 50px;
+                            background-color: rgba(255, 255, 255, 0.15);
+                        }
+                    }
+                }
             }
         }
     }
@@ -22,11 +65,26 @@ main
     {
         section 
         {
+            .cover-shape{
+                margin-bottom: -20px;
+                border: 0;
+            }
             .cover 
             {
                 .cover-container
                 {
-                    
+                    .content-wrapper{
+                        padding: 250px 50px;
+                        padding-bottom: 150px;
+                        h1{
+                            padding: 0 0 25px 0;
+                            font-size: 200%;
+                        }
+                        p {
+                            padding: 0 0 25px 0;
+                            opacity: 0.65;
+                        }
+                    }
                 }
             }
         }
@@ -43,7 +101,20 @@ main
             {
                 .cover-container
                 {
-                    
+                    justify-content: left;
+                    padding: 30px;
+                    .content-wrapper{
+                        width: 50%;
+                        padding: 250px 0;
+                        padding-bottom: 75px;
+                        text-align: left;
+                        h1{
+                            font-size: 250%;
+                        }
+                        .button-group {
+                            justify-content: left;
+                        }
+                    }
                 }
             }
         }
@@ -60,7 +131,7 @@ main
             {
                 .cover-container
                 {
-                    
+                    padding: 0 10%;
                 }
             }
         }

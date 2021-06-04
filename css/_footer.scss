@@ -8,9 +8,56 @@ footer
         .footer 
         {
             width: 100%;
+            background-image: linear-gradient(140deg,var(--dark-brown),var(--light-brown) );
+            .cover-shape{
+                color: var(--light-gray);
+                fill: currentColor;
+                margin-top: -10px;
+                transform: rotate(180deg);
+            }
             .footer-container
             {
                 width: 100%;
+                color: var(--white);
+                padding: 30px;
+                .des{
+                    width: 100%;
+                    padding: 20px 0;
+                    opacity: .7;
+                }
+                a{
+                    opacity: .7;
+                }
+                h3 {
+                    opacity: .8;
+                    padding: 0 0 10px 0;
+                }
+                .links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .link{
+                        padding: 20px 0;
+                        width: 48%;
+                    }
+                }
+                .copyright{
+                    width: 100%;
+                    padding-top: 20px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.35);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .cc-m{
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 0 10px 0;
+                    }
+                    .ss-li{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
@@ -26,7 +73,24 @@ footer
             {
                 .footer-container
                 {
-                    
+                    .links {
+                        .link{
+                            padding: 20px 0;
+                            width: 32%;
+                        }
+                    }
+                    .copyright{
+                        .cc-m{
+                            width: 40%;
+                            flex-grow: 1;
+                            text-align: left;
+                            padding: 0 0 10px 0;
+                        }
+                        .ss-li{
+                            width: 30%;
+                            text-align: right;
+                        }
+                    }
                 }
             }
         }
@@ -43,7 +107,18 @@ footer
             {
                 .footer-container
                 {
-                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .des{
+                        padding: 30px 0;
+                        width: 40%;
+                        padding-right: 10%;
+                    }
+                    .links {
+                        padding: 10px;
+                        width: 58%;
+                    }
                 }
             }
         }
@@ -60,7 +135,7 @@ footer
             {
                 .footer-container
                 {
-                    
+                    padding: 30px 10%;
                 }
             }
         }

@@ -11,6 +11,40 @@ main
             .features-container
             {
                 width: 100%;
+                padding: 30px;
+                text-align: center;
+                background-color: var(--light-gray);
+                h1 {
+                    font-size: 200%;
+                    font-weight: normal;
+                }
+                h2,h1{
+                    opacity: .8;
+                    padding: 0 0 20px 0;
+                }
+                p {
+                    opacity: .6;
+                    padding: 0 0 20px 0;
+                }
+                img {
+                    width: 70px;
+                    opacity: .8;
+                }
+                a {
+                    color: var(--light-green);
+                }
+                a {
+                    font-weight: bold;
+                }
+                .title
+                {
+                    width: 100%;
+                }
+                .content{
+                    .el {
+                        padding: 20px 0;
+                    }
+                }
             }
         }
     }
@@ -26,7 +60,20 @@ main
             {
                 .features-container
                 {
-                    
+                    text-align: left;
+                    h1 {
+                        font-size: 250%;
+                    }
+                    .content{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        .el {
+                            width: 48%;
+                            padding: 30px 0;
+                        }
+                    }
                 }
             }
         }
@@ -43,7 +90,33 @@ main
             {
                 .features-container
                 {
-                    
+                    h2,h1{
+                        padding: 0 0 10px 0;
+                    }
+                    p {
+                        padding: 0 0 10px 0;
+                    }
+                    .title
+                    {
+                        width: 50%;
+                    }
+                    .content{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        .el {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            .icon {
+                                width: 20%;
+                            }
+                            .cc {
+                                width: 80%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -60,7 +133,7 @@ main
             {
                 .features-container
                 {
-                    
+                    padding: 0 10%;
                 }
             }
         }

@@ -28,11 +28,40 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: inherit;
+  color: inherit;
 }
 
 body {
   font-family: home,sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  --light-gray: #EDF2F7;
+  --light-green: #38A169;
+  --metal-blue: #38B2AC;
+  --dark-brown: #394456;
+  --light-brown: #394456d5;
+  --white: #fff;
+  line-height: 1.5;
+}
+
+button {
+  font-size: 100%;
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -61,10 +90,124 @@ footer section {
 
 footer section .footer {
   width: 100%;
+  background-image: linear-gradient(140deg, var(--dark-brown), var(--light-brown));
+}
+
+footer section .footer .cover-shape {
+  color: var(--light-gray);
+  fill: currentColor;
+  margin-top: -10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 footer section .footer .footer-container {
   width: 100%;
+  color: var(--white);
+  padding: 30px;
+}
+
+footer section .footer .footer-container .des {
+  width: 100%;
+  padding: 20px 0;
+  opacity: .7;
+}
+
+footer section .footer .footer-container a {
+  opacity: .7;
+}
+
+footer section .footer .footer-container h3 {
+  opacity: .8;
+  padding: 0 0 10px 0;
+}
+
+footer section .footer .footer-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer section .footer .footer-container .links .link {
+  padding: 20px 0;
+  width: 48%;
+}
+
+footer section .footer .footer-container .copyright {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer section .footer .footer-container .copyright .cc-m {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+footer section .footer .footer-container .copyright .ss-li {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer section .footer .footer-container .links .link {
+    padding: 20px 0;
+    width: 32%;
+  }
+  footer section .footer .footer-container .copyright .cc-m {
+    width: 40%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: left;
+    padding: 0 0 10px 0;
+  }
+  footer section .footer .footer-container .copyright .ss-li {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer section .footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer section .footer .footer-container .des {
+    padding: 30px 0;
+    width: 40%;
+    padding-right: 10%;
+  }
+  footer section .footer .footer-container .links {
+    padding: 10px;
+    width: 58%;
+  }
+}
+
+@media (min-width: 1284px) {
+  footer section .footer .footer-container {
+    padding: 30px 10%;
+  }
 }
 
 main {
@@ -75,12 +218,122 @@ main section {
   width: 100%;
 }
 
+main section .cover-shape {
+  color: var(--light-gray);
+  fill: currentColor;
+  margin-bottom: -10px;
+}
+
 main section .cover {
   width: 100%;
+  margin-top: -5rem;
+  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.34);
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 main section .cover .cover-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .cover .cover-container .content-wrapper {
+  padding: 200px 30px;
+  padding-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+}
+
+main section .cover .cover-container .content-wrapper h1 {
+  padding: 0 0 20px 0;
+  font-size: 200%;
+  line-height: 1;
+}
+
+main section .cover .cover-container .content-wrapper p {
+  padding: 0 0 20px 0;
+  opacity: 0.65;
+}
+
+main section .cover .cover-container .content-wrapper .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .cover .cover-container .content-wrapper .button-group .active {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 768px) {
+  main section .cover-shape {
+    margin-bottom: -20px;
+    border: 0;
+  }
+  main section .cover .cover-container .content-wrapper {
+    padding: 250px 50px;
+    padding-bottom: 150px;
+  }
+  main section .cover .cover-container .content-wrapper h1 {
+    padding: 0 0 25px 0;
+    font-size: 200%;
+  }
+  main section .cover .cover-container .content-wrapper p {
+    padding: 0 0 25px 0;
+    opacity: 0.65;
+  }
+}
+
+@media (min-width: 1024px) {
+  main section .cover .cover-container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 30px;
+  }
+  main section .cover .cover-container .content-wrapper {
+    width: 50%;
+    padding: 250px 0;
+    padding-bottom: 75px;
+    text-align: left;
+  }
+  main section .cover .cover-container .content-wrapper h1 {
+    font-size: 250%;
+  }
+  main section .cover .cover-container .content-wrapper .button-group {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media (min-width: 1284px) {
+  main section .cover .cover-container {
+    padding: 0 10%;
+  }
 }
 
 main {
@@ -129,5 +382,117 @@ main section .features {
 
 main section .features .features-container {
   width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--light-gray);
+}
+
+main section .features .features-container h1 {
+  font-size: 200%;
+  font-weight: normal;
+}
+
+main section .features .features-container h2, main section .features .features-container h1 {
+  opacity: .8;
+  padding: 0 0 20px 0;
+}
+
+main section .features .features-container p {
+  opacity: .6;
+  padding: 0 0 20px 0;
+}
+
+main section .features .features-container img {
+  width: 70px;
+  opacity: .8;
+}
+
+main section .features .features-container a {
+  color: var(--light-green);
+}
+
+main section .features .features-container a {
+  font-weight: bold;
+}
+
+main section .features .features-container .title {
+  width: 100%;
+}
+
+main section .features .features-container .content .el {
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  main section .features .features-container {
+    text-align: left;
+  }
+  main section .features .features-container h1 {
+    font-size: 250%;
+  }
+  main section .features .features-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section .features .features-container .content .el {
+    width: 48%;
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  main section .features .features-container h2, main section .features .features-container h1 {
+    padding: 0 0 10px 0;
+  }
+  main section .features .features-container p {
+    padding: 0 0 10px 0;
+  }
+  main section .features .features-container .title {
+    width: 50%;
+  }
+  main section .features .features-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section .features .features-container .content .el {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main section .features .features-container .content .el .icon {
+    width: 20%;
+  }
+  main section .features .features-container .content .el .cc {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1284px) {
+  main section .features .features-container {
+    padding: 0 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
