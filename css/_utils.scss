@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*
 @font-face
 {
     font-family: home;
@@ -22,6 +25,7 @@
     font-weight: bold;
     font-style: italic;
 }
+*/
 *
 {
     margin: 0;
@@ -32,7 +36,7 @@
 }
 body 
 {
-    font-family: home,sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     --light-gray : #EDF2F7;
     --light-green : #38A169;
