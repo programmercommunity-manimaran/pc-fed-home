@@ -12,6 +12,7 @@ main
             {
                 width: 100%;
                 padding: 30px;
+                padding-top: 150px;
                 text-align: center;
                 background-color: var(--light-gray);
                 h1 {
@@ -32,9 +33,10 @@ main
                 }
                 a {
                     color: var(--light-green);
-                }
-                a {
                     font-weight: bold;
+                }
+                a:hover {
+                    font-weight: normal;
                 }
                 .title
                 {
@@ -60,6 +62,8 @@ main
             {
                 .features-container
                 {
+                    padding: 30px;
+                    padding-top: 150px;
                     text-align: left;
                     h1 {
                         font-size: 250%;
@@ -90,6 +94,8 @@ main
             {
                 .features-container
                 {
+                    padding: 30px;
+                    padding-top: 100px;
                     h2,h1{
                         padding: 0 0 10px 0;
                     }
@@ -134,6 +140,7 @@ main
                 .features-container
                 {
                     padding: 0 10%;
+                    padding-top: 100px;
                 }
             }
         }

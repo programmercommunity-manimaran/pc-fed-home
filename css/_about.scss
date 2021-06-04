@@ -11,6 +11,87 @@ main
             .about-container
             {
                 width: 100%;
+                padding: 30px;
+                background-image: linear-gradient(90deg, var(--metal-blue), var(--metal-blue), var(--light-green) );
+                .title
+                {
+                    width: 100%;
+                    padding: 50px 0;
+                    color: var(--white);
+                    text-align: center;
+                    h1 
+                    {
+                        font-size: 200%;
+                        line-height: 1.15;
+                        padding: 0 0 10px 0;
+                    }
+                    p 
+                    {
+                        opacity: .6;
+                        padding: 0 0 10px 0;
+                    }
+                    .small 
+                    {
+                        font-size: 90%;
+                    }
+                }
+                .contact-form
+                {
+                    width: 100%;
+                    .form-container
+                    {
+                        position: relative;
+                        margin-bottom: -130px;
+                        width: 100%;
+                        background-color: var(--white);
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 1px 5px 10px rgba(0,0,0,0.25);
+                        .row 
+                        {
+                            width: 100%;
+                            padding: 10px 0;
+                            .label
+                            {
+                                opacity: .6;
+                                padding: 10px 0;
+                            }
+                            .input
+                            {
+                                width: 100%;
+                                background-color: var(--light-gray);
+                                padding: 10px;
+                                border-radius: 5px;
+                                input 
+                                {
+                                    width: 100%;
+                                    font-size: 100%;
+                                }
+                            }
+                            .checkbox 
+                            {
+                                input
+                                {
+                                    transform: scale(1.5);
+                                    margin-left: 5px;
+                                    margin-right: 10px;
+                                }
+                            }
+                            .button-group 
+                            {
+                                width: 100%;
+                                button 
+                                {
+                                    width: 100%;
+                                    color: var(--light-green);
+                                    font-weight: bold;
+                                    background-color: var(--low-light-green);
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -26,7 +107,15 @@ main
             {
                 .about-container
                 {
-                    
+                    padding: 30px 0;
+                    .contact-form
+                    {
+                        width: 100%;
+                        .form-container
+                        {
+                            padding: 30px;
+                        }
+                    }
                 }
             }
         }
@@ -43,7 +132,33 @@ main
             {
                 .about-container
                 {
-                    
+                    width: 100%;
+                    padding: 30px;
+                    background-image: linear-gradient(140deg, var(--metal-blue), var(--light-green) );
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    .title
+                    {
+                        width: 48%;
+                        padding: 70px 0;
+                        text-align: left;
+                    }
+                    .contact-form
+                    {
+                        width: 48%;
+                        .form-container
+                        {
+                            font-size: 95%;
+                            width: 100%;
+                            max-width: 450px;
+                            position: relative;
+                            margin: -100px auto;
+                            width: 100%;
+                            padding: 40px;
+                        }
+                    }
                 }
             }
         }
@@ -60,7 +175,7 @@ main
             {
                 .about-container
                 {
-                    
+                    padding: 0 10%;
                 }
             }
         }
